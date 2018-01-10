@@ -1,0 +1,7 @@
+<h1>Super Chill Posts</h1>
+
+<ul>
+  <% @posts.each do |p| %>
+    <li><%= p.name_with_id %></li>
+  <% end %>
+</ul>
