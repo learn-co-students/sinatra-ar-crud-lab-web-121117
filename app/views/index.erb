@@ -1,0 +1,8 @@
+<!-- show all posts -->
+
+
+<% @posts.each do |post| %>
+<p>Post name: <%= post.name %></p>
+<p>Post content: </p>
+<p><%= post.content %></p>
+<% end %>
