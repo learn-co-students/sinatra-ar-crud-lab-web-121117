@@ -1,0 +1,15 @@
+<body>
+  <p>
+    blog blog blog blog blog
+  </p>
+
+  <h1>Posts</h1>
+
+  <ul>
+    <% @posts.each do |post| %>
+      <li>
+        <%= post.name %>
+      </li>
+    <% end %>
+  </ul>
+</body>
