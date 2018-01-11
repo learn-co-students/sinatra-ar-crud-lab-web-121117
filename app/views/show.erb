@@ -1,0 +1,8 @@
+<h1>Here is a specific song:</h1>
+<h3>Name: <%= @post.name %></h3>
+<h3>Content: <%= @post.content %></h3>
+
+<form action="/posts/<%= @post.id %>" method="post">
+  <input id="hidden" type="hidden" name="_method" value="delete">
+  <input type="submit" name="delete" value="delete">
+</form>

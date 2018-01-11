@@ -9,3 +9,7 @@ ActiveRecord::Base.establish_connection(
 )
 
 require_all 'app'
+
+task :console do
+  Pry.start
+end
