@@ -39,15 +39,15 @@ class ApplicationController < Sinatra::Base
       erb :"edit"
     end
 
-    get '/posts/:id/delete' do
-      @post = Post.find(params[:id])
-      erb :"delete"
-    end
+    # get '/posts/:id/delete' do
+    #   @post = Post.find(params[:id])
+    #   erb :"delete"
+    # end
 
     delete '/posts/:id' do
       @post = Post.find(params[:id])
-      @post.delete(@post.id)
-      redirect "/posts"
+      @post.destroy
+      erb :"delete"
     end
 
 end
